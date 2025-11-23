@@ -19,6 +19,7 @@ app.innerHTML = `
       <nav class="hidden items-center gap-6 text-sm text-neutral-700 sm:flex">
         <a href="#features" class="hover:text-black transition-colors">Features</a>
         <a href="#support" class="hover:text-black transition-colors">Support</a>
+        <a href="#terms" class="hover:text-black transition-colors">Terms</a>
         <a href="#privacy" class="hover:text-black transition-colors">Privacy</a>
       </nav>
     </div>
@@ -47,27 +48,30 @@ app.innerHTML = `
           </p>
 
           <div class="flex flex-wrap items-center gap-3">
-            <!-- App Store buttons (placeholder links) -->
             <a
               href="#"
-              class="inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-xs font-medium text-white shadow-sm transition hover:bg-neutral-900"
+              class="inline-flex h-10 items-center"
+              aria-label="Download on the App Store"
             >
-              <span class="text-lg"></span>
-              <span class="flex flex-col text-left leading-tight">
-                <span class="text-[10px] uppercase tracking-[0.16em]">Download on the</span>
-                <span class="text-xs font-semibold">App Store</span>
-              </span>
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                class="h-10 w-auto"
+                loading="lazy"
+              />
             </a>
 
             <a
               href="#"
-              class="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2.5 text-xs font-medium text-neutral-900 shadow-sm transition hover:border-neutral-400"
+              class="inline-flex h-10 items-center"
+              aria-label="Get it on Google Play"
             >
-              <img class="h-4 w-4 rounded-sm" src="/play-icon.webp"/>
-              <span class="flex flex-col text-left leading-tight">
-                <span class="text-[10px] uppercase tracking-[0.16em]">Get it on</span>
-                <span class="text-xs font-semibold">Google Play</span>
-              </span>
+              <img
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                class="h-10 w-auto max-w-[160px]"
+                loading="lazy"
+              />
             </a>
 
             <p class="ml-1 text-xs text-neutral-500">Available on iOS and Android.</p>
@@ -280,6 +284,70 @@ app.innerHTML = `
       </div>
     </section>
 
+    <!-- Terms of Service -->
+    <section id="terms" class="bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-12 lg:px-6 lg:py-16">
+        <div class="mb-6 space-y-2">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">
+            Terms of Service
+          </p>
+          <h2 class="text-2xl font-semibold tracking-tight text-neutral-900">
+            Simple rules for using Timeshare Pro.
+          </h2>
+          <p class="text-sm text-neutral-600">
+            These terms outline how you may use the app and the website. By accessing either, you agree to the policies below.
+          </p>
+        </div>
+
+        <div class="space-y-6 text-sm leading-relaxed text-neutral-700">
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">Professional use only</h3>
+            <p class="mt-2">
+              Timeshare Pro is provided as a sales enablement tool for timeshare professionals. You are responsible for verifying every calculation, complying with your company policies, and ensuring any numbers you show align with applicable laws and disclosures.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">No data storage guarantees</h3>
+            <p class="mt-2">
+              The calculators work locally and are not intended to permanently store personal data. Do not input sensitive customer information or payment details. Any information you submit through the contact form is used solely to respond to your message.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">Disclaimer of warranties</h3>
+            <p class="mt-2">
+              The toolkit is provided “as is” without warranties of accuracy, fitness, or availability. Timeshare Pro makes every effort to keep calculations current but does not promise error-free performance.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">Limitation of liability</h3>
+            <p class="mt-2">
+              To the maximum extent allowed by law, Timeshare Pro is not liable for any losses, missed sales, or damages arising from your use of the calculators or reliance on generated numbers.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">Updates to these terms</h3>
+            <p class="mt-2">
+              Policies may change as the product evolves. When we update the terms, the effective date below will change. Continued use after an update means you accept the new version.
+            </p>
+            <p class="mt-2 text-xs text-neutral-500">
+              Last updated: November 23, 2025
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-sm font-semibold text-neutral-900">Questions</h3>
+            <p class="mt-2">
+              For questions about these terms, email us using the support form above. Include “Terms of Service” in the subject line for faster routing.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
     <!-- Privacy -->
     <section id="privacy" class="bg-neutral-50">
       <div class="mx-auto max-w-5xl px-4 py-12 lg:px-6 lg:py-16">
@@ -386,18 +454,25 @@ app.innerHTML = `
 
   <!-- Footer -->
   <footer class="border-t border-neutral-200 bg-white">
-    <div
-      class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-6 text-[11px] text-neutral-500 sm:flex-row lg:px-6"
-    >
-      <p>
-        © <span id="year"></span> Timeshare Pro. All rights
-        reserved.
-      </p>
-      <div class="flex items-center gap-4">
-        <a href="#privacy" class="hover:text-neutral-900">Privacy</a>
-        <a href="#support" class="hover:text-neutral-900">Support</a>
-        <a href="#top" class="hover:text-neutral-900">Back to top</a>
+    <div class="mx-auto max-w-5xl px-4 py-6 lg:px-6">
+      <div
+        class="flex flex-col items-center justify-between gap-3 text-[11px] text-neutral-500 sm:flex-row"
+      >
+        <p>
+          © <span id="year"></span> Timeshare Pro. All rights
+          reserved.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="#terms" class="hover:text-neutral-900">Terms</a>
+          <a href="#privacy" class="hover:text-neutral-900">Privacy</a>
+          <a href="#support" class="hover:text-neutral-900">Support</a>
+          <a href="#top" class="hover:text-neutral-900">Back to top</a>
+        </div>
       </div>
+      <p class="mt-3 text-center text-[11px] text-neutral-400 sm:text-left">
+        App Store is a trademark of Apple Inc., registered in the U.S. and other countries and regions.
+        Google Play and the Google Play logo are trademarks of Google LLC.
+      </p>
     </div>
   </footer>
 `;
