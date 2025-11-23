@@ -209,7 +209,7 @@ app.innerHTML = `
         <!-- Formspree form -->
         <div class="flex-1">
           <form
-            action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE"
+            action="https://formspree.io/f/xdkjvykw""
             method="POST"
             class="space-y-4 rounded-3xl border border-neutral-200 bg-neutral-50 p-5 shadow-sm"
           >
@@ -233,21 +233,6 @@ app.innerHTML = `
                 required
                 class="block w-full rounded-2xl border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 outline-none ring-0 placeholder:text-neutral-400 focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900"
                 placeholder="you@example.com"
-              />
-            </div>
-
-            <div class="space-y-1.5">
-              <label
-                for="subject"
-                class="block text-xs font-medium text-neutral-700"
-                >Subject</label
-              >
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="block w-full rounded-2xl border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 outline-none ring-0 placeholder:text-neutral-400 focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900"
-                placeholder="Issue, feature request, or question"
               />
             </div>
 
