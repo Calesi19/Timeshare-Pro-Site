@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/Calesi19/Timeshare-Pro-Site/blob/main/sitemap.xml
