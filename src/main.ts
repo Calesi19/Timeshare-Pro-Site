@@ -85,62 +85,15 @@ app.innerHTML = `
           </div>
         </div>
 
-        <!-- Right: phone mock -->
+        <!-- Right: mockup image -->
         <div class="flex-1">
-          <div
-            class="mx-auto max-w-xs rounded-[2.2rem] bg-neutral-900 p-2.5 shadow-[0_18px_45px_rgba(15,23,42,0.35)]"
-          >
-            <div class="mb-2 flex items-center justify-between px-10 pt-1 text-[10px] text-neutral-400">
-              <span>9:41</span>
-              <span class="flex gap-1">
-                <span class="h-2 w-3 rounded-sm bg-neutral-600/80"></span>
-                <span class="h-2 w-3 rounded-sm bg-neutral-600/80"></span>
-                <span class="h-2 w-3 rounded-sm bg-neutral-600/80"></span>
-              </span>
-            </div>
-
-            <div class="rounded-[1.8rem] bg-neutral-950 px-4 py-5 text-neutral-50">
-              <p class="text-[11px] uppercase tracking-[0.2em] text-neutral-400">
-                Toolkit
-              </p>
-              <h2 class="mt-1 text-lg font-semibold tracking-tight">
-                Mortgage Proposal
-              </h2>
-
-              <div class="mt-4 grid grid-cols-2 gap-3 text-[11px]">
-                <div class="rounded-2xl bg-neutral-900/80 p-3">
-                  <p class="text-neutral-400">Down payment</p>
-                  <p class="mt-1 text-sm font-semibold">$9,400</p>
-                </div>
-                <div class="rounded-2xl bg-neutral-900/80 p-3">
-                  <p class="text-neutral-400">Monthly</p>
-                  <p class="mt-1 text-sm font-semibold">$742.18</p>
-                </div>
-                <div class="rounded-2xl bg-neutral-900/80 p-3">
-                  <p class="text-neutral-400">Closing costs</p>
-                  <p class="mt-1 text-sm font-semibold">$1,451</p>
-                </div>
-                <div class="rounded-2xl bg-neutral-900/80 p-3">
-                  <p class="text-neutral-400">Total due today</p>
-                  <p class="mt-1 text-sm font-semibold">$10,960</p>
-                </div>
-              </div>
-
-              <div
-                class="mt-4 flex items-center justify-between rounded-2xl bg-neutral-900/70 px-3 py-2.5 text-[11px]"
-              >
-                <div>
-                  <p class="text-neutral-400">Mode</p>
-                  <p class="text-xs font-semibold">Dark • Clean UI</p>
-                </div>
-                <button
-                  type="button"
-                  class="rounded-full bg-white/10 px-3 py-1 text-[10px] font-medium"
-                >
-                  Switch theme
-                </button>
-              </div>
-            </div>
+          <div class="mx-auto max-w-sm">
+            <img
+              src="/mockup.png"
+              alt="Timeshare Sales Toolkit mockup"
+              class="w-full"
+              loading="lazy"
+            />
           </div>
           <p class="mt-4 text-center text-xs text-neutral-400">
             Mock interface for illustration only.
