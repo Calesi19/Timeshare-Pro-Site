@@ -1,3 +1,5 @@
+![Timeshare Pro Landing Page](./docs/banner.webp)
+
 # Timeshare Pro Landing Page
 
 Static marketing site for the Timeshare Pro sales toolkit. The page highlights the mobile app’s calculators, includes a Formspree-powered support form, and documents the service’s Terms of Service and Privacy Policy. Two implementations are available:
@@ -28,13 +30,13 @@ The CDN build of Tailwind CSS is referenced in `index.html`, so there is no inst
 
 ## Project Structure
 
-| Path | Purpose |
-| --- | --- |
-| `index.html` | Production-ready single page using Tailwind CDN. |
+| Path           | Purpose                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `index.html`   | Production-ready single page using Tailwind CDN.                                                                                     |
 | `preview.html` | Alternate prototype wired to a precompiled Tailwind file (`./css/tailwind.css`). Useful if you want to bring your own design system. |
-| `src/main.ts` | Renders the landing page in a Vite/TypeScript environment and updates the footer year dynamically. |
-| `styles.css` | Minimal global styles (font stack, smoothing) shared by `index.html`. |
-| `mockup.png` | Device illustration displayed in the hero. |
+| `src/main.ts`  | Renders the landing page in a Vite/TypeScript environment and updates the footer year dynamically.                                   |
+| `styles.css`   | Minimal global styles (font stack, smoothing) shared by `index.html`.                                                                |
+| `mockup.png`   | Device illustration displayed in the hero.                                                                                           |
 
 ## Customizing
 
